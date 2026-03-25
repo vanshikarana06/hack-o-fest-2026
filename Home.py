@@ -100,7 +100,7 @@ with col1:
     st.success("💡 Built to support farmers with actionable insights, not complex theory.")
 
     if st.button("Explore Prediction →"):
-        st.switch_page("pages/2_prediction.py")
+        st.switch_page("pages/2_Prediction.py")
 
 with col2:
     st.image(
