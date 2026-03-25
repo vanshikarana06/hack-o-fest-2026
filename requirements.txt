@@ -54,3 +54,4 @@ streamlit
 pandas
 plotly
 joblib
+scikit-learn
