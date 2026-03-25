@@ -8,31 +8,36 @@ st.set_page_config(
 # ---------- CUSTOM CSS ----------
 st.markdown("""
 <style>
-/* Background */
-.stApp {
-    background-color: #f8fafc;
+/* 1. Global Text Visibility Fix - Forces all text to be dark charcoal */
+.stApp, .stMarkdown, p, li, span, label, .subtitle {
+    color: #1e293b !important;
 }
 
-/* Title */
+/* 2. Background */
+.stApp {
+    background-color: #f8fafc !important;
+}
+
+/* 3. Main Title - Your green color */
 .main-title {
     font-size: 48px;
     font-weight: 800;
-    color: #1b5e20;
+    color: #1b5e20 !important;
     margin-bottom: 10px;
 }
 
-/* Subtitle */
+/* 4. Subtitle */
 .subtitle {
     font-size: 20px;
-    color: #555;
     margin-bottom: 20px;
+    display: block; /* Ensures it behaves like a block element */
 }
 
-/* Card Style */
+/* 5. Card Style */
 .card {
     padding: 25px;
     border-radius: 18px;
-    background: white;
+    background: white !important;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
     transition: transform 0.2s ease-in-out;
 }
@@ -41,10 +46,10 @@ st.markdown("""
     transform: translateY(-5px);
 }
 
-/* Button Style */
+/* 6. Button Style */
 .stButton>button {
-    background: linear-gradient(90deg, #2e7d32, #66bb6a);
-    color: white;
+    background: linear-gradient(90deg, #2e7d32, #66bb6a) !important;
+    color: white !important;
     border-radius: 10px;
     padding: 10px 20px;
     font-weight: bold;
@@ -52,21 +57,21 @@ st.markdown("""
 }
 
 .stButton>button:hover {
-    background: linear-gradient(90deg, #1b5e20, #43a047);
+    background: linear-gradient(90deg, #1b5e20, #43a047) !important;
 }
 
-/* Section Title */
+/* 7. Section Title */
 .section-title {
     font-size: 28px;
     font-weight: 700;
     margin-top: 30px;
-    color: #1b5e20;
+    color: #1b5e20 !important;
 }
 
-/* Footer */
+/* 8. Footer */
 .footer {
     text-align: center;
-    color: gray;
+    color: #64748b !important; /* Slightly darker than gray for visibility */
     margin-top: 40px;
     font-size: 14px;
 }
